@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QRForge · 개인정보처리방침</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    margin: 0 auto; padding: 32px 20px 64px; max-width: 720px;
+    font-family: -apple-system, "Segoe UI", "Noto Sans KR", sans-serif;
+    line-height: 1.75; color: #13213a; background: #fff;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; margin-top: 36px; border-top: 1px solid #e4eaf2; padding-top: 20px; }
+  .updated { color: #667085; font-size: .9rem; margin-top: 0; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  a { color: #0f66f5; }
+  .lang { margin-top: 56px; border-top: 2px solid #e4eaf2; padding-top: 24px; }
+  footer { margin-top: 40px; color: #667085; font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<h1>QRForge 개인정보처리방침</h1>
+<p class="updated">최종 수정일: 2026-10-02</p>
+
+<p>
+  QRForge(이하 &quot;본 앱&quot;)는 QR 코드·바코드 스캔과 QR 코드 생성을 위한 앱입니다.
+  본 방침은 본 앱이 어떤 정보를 다루고, 어디에 저장하며, 언제 기기 밖으로 내보내는지 설명합니다.
+</p>
+
+<p>
+  <strong>본 앱의 개발자는 서버를 운영하지 않으며, 사용자의 데이터를 받거나 보관하지 않습니다.</strong>
+  아래 3·4항의 기능은 모두 사용자가 직접 켜는 선택 기능이며, 이를 사용하지 않으면 스캔 데이터는
+  기기 밖으로 나가지 않습니다.
+</p>
+
+<h2>1. 카메라와 이미지</h2>
+<ul>
+  <li>
+    <strong>카메라</strong>는 코드 스캔에만 사용합니다. 카메라 영상은 기기 안에서 실시간으로
+    분석될 뿐 사진·영상으로 저장하거나 외부로 전송하지 않습니다.
+  </li>
+  <li>
+    <strong>갤러리 이미지</strong>는 사용자가 직접 고른 한 장만 읽어 기기 안에서 코드를 인식합니다.
+    이미지를 복사·저장하거나 전송하지 않습니다.
+  </li>
+</ul>
+
+<h2>2. 기기에 저장되는 정보</h2>
+<p>다음 정보는 기기 안에만 저장되며, 앱을 삭제하면 함께 삭제됩니다.</p>
+<ul>
+  <li>스캔 기록(코드 값, 스캔 방식, 시각) — 앱의 기록 화면에서 언제든 지울 수 있습니다</li>
+  <li>코드 전송 서비스 프로필(아래 3항)</li>
+  <li>테마, 언어 등 앱 설정</li>
+</ul>
+<p>
+  생성한 QR 코드를 공유할 때는 이미지 파일을 앱의 임시 캐시에 만든 뒤, 사용자가 선택한 앱으로만 전달합니다.
+</p>
+
+<h2>3. 코드 전송 기능 (선택, 유료)</h2>
+<p>
+  코드 전송은 스캔한 값을 <strong>사용자가 직접 등록한 서버 주소</strong>로 보내는 기능입니다.
+  인앱 구매 후 사용자가 서비스 프로필을 만들고 선택한 경우에만 동작하며,
+  &quot;전송 안 함&quot;을 선택하면 아무것도 전송하지 않습니다.
+</p>
+<p>이 기능을 사용하면 스캔할 때마다 사용자가 지정한 주소로 다음이 전송됩니다.</p>
+<ul>
+  <li>스캔한 코드 값과 스캔 시각</li>
+  <li>사용자가 프로필에 입력한 파라미터와 헤더(예: API 키)</li>
+  <li>앱 이름·버전, 프로필 이름, Android 버전(요청 헤더)</li>
+</ul>
+<p>
+  전송 대상 서버는 <strong>사용자 또는 사용자가 속한 조직이 정한 곳</strong>이며, 개발자는 그 내용을
+  받거나 볼 수 없습니다. 전송된 데이터의 처리는 해당 서버 운영자의 방침을 따릅니다.
+  구글 계정 이메일 등 개인정보는 자동으로 전송하지 않습니다. 보안을 위해 HTTPS 주소 사용을 권장합니다.
+</p>
+
+<h2>4. 구글 계정 로그인과 드라이브 동기화 (선택)</h2>
+<p>
+  여러 기기에서 같은 서비스 프로필을 쓰고 싶은 경우, 설정 화면에서 구글 계정으로 로그인할 수 있습니다.
+  <strong>선택 기능이며 로그인하지 않아도 다른 기능은 그대로 사용할 수 있습니다.</strong>
+</p>
+<p>로그인한 경우 다음이 이루어집니다.</p>
+<ul>
+  <li>
+    <strong>계정 이메일 주소</strong>를 화면에 표시하기 위해 확인합니다.
+    이 값은 <strong>기기 안에만</strong> 저장되며 외부로 전송하지 않습니다
+  </li>
+  <li>
+    사용자가 동기화를 실행하면 서비스 프로필(서버 주소, 파라미터, 헤더 포함)을 사용자
+    <strong>본인의 구글 드라이브</strong> 안에 있는 <strong>앱 전용 폴더</strong>에 저장하고 불러옵니다.
+    스캔 기록은 동기화하지 않습니다
+  </li>
+</ul>
+<p>본 앱이 요청하는 구글 권한은 다음 하나뿐입니다.</p>
+<ul>
+  <li>
+    <code>https://www.googleapis.com/auth/drive.appdata</code> —
+    구글 드라이브의 <strong>앱 전용 폴더</strong>에 접근하는 권한입니다.
+    이 폴더는 본 앱이 만든 데이터만 담기며, 본 앱은 사용자의 다른 드라이브 파일을
+    <strong>보거나 수정할 수 없습니다.</strong>
+  </li>
+</ul>
+<p>언제든 다음 방법으로 중단하거나 지울 수 있습니다.</p>
+<ul>
+  <li>앱의 설정 화면에서 <strong>로그아웃</strong> — 기기에 저장된 이메일이 삭제됩니다</li>
+  <li>
+    구글 계정 설정(<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>)에서
+    본 앱의 접근 권한 해제
+  </li>
+  <li>구글 드라이브 설정 → 앱 관리에서 본 앱이 저장한 데이터 삭제</li>
+</ul>
+
+<h2>5. 광고</h2>
+<p>
+  본 앱은 Google AdMob을 통해 배너 광고와 앱 실행 광고를 표시합니다. Google은 광고 제공을 위해
+  광고 식별자 등의 정보를 수집할 수 있으며, 이는 Google의 개인정보처리방침을 따릅니다.
+</p>
+<ul>
+  <li>Google 개인정보처리방침: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li>광고 개인 최적화 해제: 기기 설정 → Google → 광고</li>
+</ul>
+<p>앱 내에서 광고 제거를 구매하면 광고가 표시되지 않습니다.</p>
+
+<h2>6. 인앱 구매</h2>
+<p>
+  결제는 Google Play를 통해 이루어지며, 본 앱은 결제 수단 정보를 받지 않습니다.
+  구매 여부는 Google Play에서 확인해 기능을 활성화하는 데만 사용합니다.
+</p>
+
+<h2>7. 아동 개인정보</h2>
+<p>
+  본 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.
+</p>
+
+<h2>8. 방침 변경</h2>
+<p>본 방침이 변경되는 경우 이 페이지에 변경 내용과 최종 수정일을 게시합니다.</p>
+
+<h2>9. 문의</h2>
+<ul>
+  <li>개발자: 송태환 (SongTaeHwan)</li>
+  <li>이메일: <a href="mailto:songtaehwan@gmail.com">songtaehwan@gmail.com</a></li>
+</ul>
+
+<div class="lang" lang="en">
+  <h1>Privacy Policy — QRForge</h1>
+  <p class="updated">Last updated: 2026-10-02</p>
+
+  <p>
+    QRForge (&quot;the app&quot;) scans QR codes and barcodes and generates QR codes.
+    This policy explains what the app handles, where it is stored, and when it leaves your device.
+  </p>
+
+  <p>
+    <strong>The developer runs no server and never receives or holds your data.</strong>
+    The features in sections 3 and 4 are optional and must be turned on by you. Without them,
+    scan data never leaves your device.
+  </p>
+
+  <h2>1. Camera and images</h2>
+  <ul>
+    <li>
+      The <strong>camera</strong> is used only to scan codes. Frames are analyzed on the device in
+      real time and are never saved as photos or videos or transmitted.
+    </li>
+    <li>
+      A <strong>gallery image</strong> you pick is read once on the device to detect a code.
+      It is not copied, stored, or transmitted.
+    </li>
+  </ul>
+
+  <h2>2. Data stored on your device</h2>
+  <p>The following stays on your device and is removed when you uninstall the app.</p>
+  <ul>
+    <li>Scan history (code value, scan mode, time) — you can clear it at any time in the app</li>
+    <li>Code-sending service profiles (section 3)</li>
+    <li>App settings such as theme and language</li>
+  </ul>
+  <p>
+    When you share a generated QR code, the image is written to the app&#39;s temporary cache and
+    passed only to the app you choose.
+  </p>
+
+  <h2>3. Code sending (optional, paid)</h2>
+  <p>
+    Code sending forwards scanned values to <strong>a server address you configure yourself</strong>.
+    It works only after an in-app purchase and only when you create and select a service profile.
+    Selecting &quot;Don&#39;t send&quot; sends nothing.
+  </p>
+  <p>When enabled, each scan sends the following to the address you set:</p>
+  <ul>
+    <li>The scanned value and the scan time</li>
+    <li>Parameters and headers you entered in the profile (for example, an API key)</li>
+    <li>App name and version, profile name, and Android version (request headers)</li>
+  </ul>
+  <p>
+    The receiving server is <strong>chosen by you or your organization</strong>; the developer cannot
+    receive or see this data. Its handling is governed by that server operator&#39;s policies.
+    Personal information such as your Google account email is never sent automatically.
+    HTTPS addresses are recommended.
+  </p>
+
+  <h2>4. Google sign-in and Drive sync (optional)</h2>
+  <p>
+    You may sign in with a Google account to use the same service profiles across devices.
+    <strong>This is optional; all other features work without it.</strong>
+  </p>
+  <p>If you sign in:</p>
+  <ul>
+    <li>
+      Your <strong>account email</strong> is read so it can be shown on screen.
+      It is stored <strong>only on your device</strong> and never transmitted
+    </li>
+    <li>
+      When you run sync, your service profiles (including server addresses, parameters, and headers)
+      are stored in and loaded from an <strong>app-specific folder inside your own Google Drive</strong>.
+      Scan history is not synced
+    </li>
+  </ul>
+  <p>The app requests a single Google permission:</p>
+  <ul>
+    <li>
+      <code>https://www.googleapis.com/auth/drive.appdata</code> — access to the
+      <strong>app-specific folder</strong> in Google Drive. That folder holds only data
+      this app created; the app <strong>cannot see or change your other Drive files.</strong>
+    </li>
+  </ul>
+  <p>You can stop or remove this at any time:</p>
+  <ul>
+    <li>Sign out in the app&#39;s settings — the stored email is deleted</li>
+    <li>
+      Revoke access at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>
+    </li>
+    <li>Delete the stored data in Google Drive settings → Manage apps</li>
+  </ul>
+
+  <h2>5. Advertising</h2>
+  <p>
+    The app shows banner and app-open ads through Google AdMob. Google may collect advertising
+    identifiers to serve ads, governed by
+    <a href="https://policies.google.com/privacy">Google&#39;s Privacy Policy</a>.
+    Purchasing ad removal in the app disables ads.
+  </p>
+
+  <h2>6. In-app purchases</h2>
+  <p>
+    Payments are processed by Google Play; the app never receives payment details.
+    Purchase status is checked with Google Play only to unlock features.
+  </p>
+
+  <h2>7. Children</h2>
+  <p>The app is not directed to children under 14 and does not knowingly collect their data.</p>
+
+  <h2>8. Contact</h2>
+  <ul>
+    <li>Developer: SongTaeHwan</li>
+    <li>Email: <a href="mailto:songtaehwan@gmail.com">songtaehwan@gmail.com</a></li>
+  </ul>
+</div>
+
+<footer>QRForge · 송태환 (SongTaeHwan)</footer>
+
+</body>
+</html>
